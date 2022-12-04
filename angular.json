@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ip-address"
+    }
+  },
+  "defaultProject": "ip-address",
+  "cli": {
+    "analytics": "a8c667b6-570d-4e7b-9a2d-0269d9c34de6"
+  }
 }
