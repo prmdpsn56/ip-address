@@ -18,8 +18,8 @@ export class AppComponent {
   
   getIPAddress()
   {
-    this.http.get('/ip').subscribe((res:any)=>{
-      console.log(res);
+    this.http.get("http://api.ipify.org/?format=json").subscribe((res:any)=>{
+      this.ipAddress = res.ip;
     });
   }
 }
