@@ -18,7 +18,7 @@ export class AppComponent {
   
   getIPAddress()
   {
-    this.http.get("http://54.163.117.127:8080").subscribe((res:any)=>{
+    this.http.get("http://54.163.117.127:8080/ip").subscribe((res:any)=>{
       console.log(res);
     });
   }
