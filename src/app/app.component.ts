@@ -12,14 +12,14 @@ export class AppComponent {
   
   constructor(private http:HttpClient) { }
   
-  ngOnInit() {
-      this.getIPAddress();
-  }
+  // ngOnInit() {
+  //     this.getIPAddress();
+  // }
   
-  getIPAddress()
-  {
-    this.http.get("http://api.ipify.org/?format=json").subscribe((res:any)=>{
-      this.ipAddress = res.ip;
-    });
-  }
+  // getIPAddress()
+  // {
+  //   this.http.get("http://api.ipify.org/?format=json").subscribe((res:any)=>{
+  //     this.ipAddress = res.ip;
+  //   });
+  // }
 }
