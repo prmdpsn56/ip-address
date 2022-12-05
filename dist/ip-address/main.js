@@ -81,8 +81,8 @@ class AppComponent {
         this.getIPAddress();
     }
     getIPAddress() {
-        this.http.get("http://api.ipify.org/?format=json").subscribe((res) => {
-            this.ipAddress = res.ip;
+        this.http.get("http://54.163.117.127:8080").subscribe((res) => {
+            console.log(res);
         });
     }
 }
